@@ -1,0 +1,30 @@
+.title {
+    margin-bottom: 20px;
+}
+
+.contactBlock {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    animation: hid 1s;
+}
+
+
+@keyframes hid {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+
+.item {
+    margin-bottom: 20px;
+}
+
+.firstLi {
+    margin-bottom: 5px;
+}

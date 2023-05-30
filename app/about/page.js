@@ -1,7 +1,4 @@
-import { Roboto_Serif } from 'next/font/google';
 import s from './page.module.css';
-
-const roboto_serif = Roboto_Serif({ subsets: ['latin'], weight: '400' });
 
 export const metadata = {
   title: 'О компании | Двери Грузии',
@@ -9,7 +6,7 @@ export const metadata = {
 
 export default function About() {
   return (
-    <div className={roboto_serif.className}>
+    <div>
       <h1 className={s.title}>О компании</h1>
       <div className={s.description}>
         Компания развивается с 2001 года. За эти годы работы фабрика "Двери

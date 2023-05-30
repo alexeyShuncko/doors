@@ -3,5 +3,9 @@ export const metadata = {
 };
 
 export default function Catalogs() {
-  return <div>Catalogs</div>;
+  return (
+    <div>
+      <h1>Каталоги</h1>
+    </div>
+  );
 }

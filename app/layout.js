@@ -16,7 +16,7 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <body className={pattaya.className}>
         <MyHeader />
-        <main>{children}</main>
+        <main className={roboto_serif.className}>{children}</main>
         <MyFooter />
       </body>
     </html>
