@@ -1,0 +1,46 @@
+.interier {
+    height: 70vw;
+    background: url('../public/4.jpg') center;
+    background-size: cover;
+    overflow: auto;
+    margin-bottom: 30px;
+}
+
+.slogan {
+    margin: 0 auto;
+    width: 80%;
+    margin-bottom: 30px;
+}
+
+.list li {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+.photo {
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px var(--border);
+}
+
+
+
+.photo2 {
+    border-radius: 10px;
+    box-shadow: -5px 5px 10px var(--border);
+}
+
+#secondItem {
+    display: flex;
+}
+
+
+@media (max-width: 737px) {
+    .list li {
+        flex-direction: column;
+    }
+
+    #secondItem {
+        flex-direction: column-reverse;
+    }
+}
