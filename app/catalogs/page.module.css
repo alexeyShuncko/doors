@@ -6,10 +6,11 @@
 .listCollections {
     display: flex;
     justify-content: space-around;
+    flex-wrap: wrap;
     gap: 40px;
 }
 
 .listCollections li {
-
+    text-align: center;
     cursor: pointer;
 }
