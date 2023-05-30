@@ -36,7 +36,7 @@ export const MyHeader = () => {
             <Link
               href={'/about'}
               className={pathname === '/about' ? 'activeLink' : ''}>
-              О нас
+              О компании
             </Link>
           </li>
           <li>
