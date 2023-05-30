@@ -37,8 +37,16 @@ const MyFooter = () => {
           </li>
         </ul>
         <ul>
-          <li>+995-032-1234455</li>
-          <li>+995-032-1112233</li>
+          <li>
+            <a href="tel:+995-032-1234455" target="_blank" rel="noreferrer">
+              +995-032-1234455
+            </a>
+          </li>
+          <li>
+            <a href="tel:+995-032-1112233" target="_blank" rel="noreferrer">
+              +995-032-1112233
+            </a>{' '}
+          </li>
           <li>dveri@mail.ru</li>
           <li>topdverigruzii@mail.ru</li>
           <li>Тбилиси, проспект Шота Руставели, 16</li>
