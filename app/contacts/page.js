@@ -73,7 +73,6 @@ export default function Contacts() {
         </li>
         <li>
           <YMaps
-            preload
             query={{
               apikey: '53dca892-14fc-4fba-94d9-e871421fff5e',
               load: 'package.full',

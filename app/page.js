@@ -20,14 +20,16 @@ export default function Home() {
       </h4>
       <ul className={s.list}>
         <li>
-          <Image
-            src={photo1}
-            alt="Интерьер"
-            width={480}
-            height={360}
-            className={s.photo}
-          />
-          <div>
+          <div className={s.imgCont}>
+            <Image
+              src={photo1}
+              fill={true}
+              alt="Интерьер1"
+              className={s.photo}
+              sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+            />
+          </div>
+          <div className={s.text}>
             <h3>Почему же всё - таки мы?</h3>
             <div>
               Потому что знаем о дверях всё! И конечно, постоянно улучшаем свои
@@ -40,7 +42,7 @@ export default function Home() {
           </div>
         </li>
         <li className={s.secondItem}>
-          <div>
+          <div className={s.text}>
             <h3>Вам сложно выбрать двери?</h3>
             <div>
               Мы поможем и посоветуем конкретные варианты! Потому что точно
@@ -49,23 +51,27 @@ export default function Home() {
               определиться с дизайном
             </div>
           </div>
-          <Image
-            src={photo2}
-            alt="Интерьер"
-            width={480}
-            height={360}
-            className={s.photo2}
-          />
+          <div className={s.imgCont}>
+            <Image
+              src={photo2}
+              alt="Интерьер2"
+              fill={true}
+              className={s.photo2}
+              sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+            />
+          </div>
         </li>
         <li>
-          <Image
-            src={photo3}
-            alt="Интерьер"
-            width={480}
-            height={360}
-            className={s.photo}
-          />
-          <div>
+          <div className={s.imgCont}>
+            <Image
+              src={photo3}
+              alt="Интерьер3"
+              fill={true}
+              className={s.photo}
+              sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+            />
+          </div>
+          <div className={s.text}>
             <h3>О приятных ценах</h3>
             <div>
               Наша компания работает напрямую с производителями, среди которых

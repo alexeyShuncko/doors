@@ -25,7 +25,14 @@ export const MyHeader = () => {
     <header>
       <Link href={'/'}>
         <div className="logo">
-          <Image src={doorImg} height={40} width={20} alt="Дверь" />
+          <div className="containerImage">
+            <Image
+              src={doorImg}
+              fill={true}
+              alt="Дверь"
+              sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+            />
+          </div>
           <span>
             Двери<br></br> Грузии
           </span>

@@ -16,25 +16,54 @@ export default function Catalogs() {
       <ul className={s.listCollections}>
         <li>
           <a href="http://localhost:3000/catalog.pdf" download>
-            <Image src={door1} alt="Дверь" height={300} />
+            <div className={s.imgCont}>
+              <Image
+                src={door1}
+                alt="Дверь"
+                fill={true}
+                sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+              />
+            </div>
+
             <h3>Коллекция 1</h3>
           </a>
         </li>
         <li>
           <a href="http://localhost:3000/catalog.pdf" download>
-            <Image src={door2} alt="Дверь" height={300} />
+            <div className={s.imgCont}>
+              <Image
+                src={door2}
+                alt="Дверь"
+                fill={true}
+                sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+              />
+            </div>
             <h3>Коллекция 2</h3>
           </a>
         </li>
         <li>
           <a href="http://localhost:3000/catalog.pdf" download>
-            <Image src={door3} alt="Дверь" height={300} />
+            <div className={s.imgCont}>
+              <Image
+                src={door3}
+                alt="Дверь"
+                fill={true}
+                sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+              />
+            </div>
             <h3>Коллекция 3</h3>
           </a>
         </li>
         <li>
           <a href="http://localhost:3000/catalog.pdf" download>
-            <Image src={door4} alt="Дверь" height={300} />
+            <div className={s.imgCont}>
+              <Image
+                src={door4}
+                alt="Дверь"
+                fill={true}
+                sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+              />
+            </div>
             <h3>Коллекция 4</h3>
           </a>
         </li>

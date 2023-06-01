@@ -3,35 +3,49 @@
     background: url('../public/4.jpg') center;
     background-size: cover;
     overflow: auto;
-    margin-bottom: 30px;
+    margin-bottom: 2rem;
 }
 
 .slogan {
     margin: 0 auto;
     width: 80%;
-    margin-bottom: 30px;
+    margin-bottom: 2rem;
 }
 
 .list {
     display: flex;
     flex-direction: column;
-    gap: 20px;
+    align-items: center;
+    gap: 1.25rem;
+
 }
 
 .list li {
     display: flex;
     align-items: center;
-    gap: 40px;
+    gap: 2.5rem;
+    flex-grow: 1
 }
 
+.imgCont {
+    position: relative;
+    width: 30rem;
+    height: 22.5rem;
+}
+
+.text {
+    flex: 1;
+}
+
+
 .photo {
-    border-radius: 10px;
-    box-shadow: 5px 5px 10px var(--border);
+    border-radius: 0.625rem;
+    box-shadow: 0.3125rem 0.3125rem 0.625rem var(--border);
 }
 
 .photo2 {
-    border-radius: 10px;
-    box-shadow: -5px 5px 10px var(--border);
+    border-radius: 0.625rem;
+    box-shadow: -0.3125rem 0.3125rem 0.625rem var(--border);
 }
 
 
@@ -45,12 +59,14 @@
     font-weight: bold;
 }
 
-@media (max-width: 768px) {
+@media ((-webkit-min-device-pixel-ratio: 3) and (min-width: 901px)) or (max-width: 768px) {
     .list li {
         flex-direction: column;
+        width: 100%;
     }
 
     .secondItem {
         flex-direction: column-reverse !important;
     }
+
 }
