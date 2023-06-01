@@ -1,18 +1,12 @@
 'use client';
-
 import s from './page.module.css';
 import { YMaps, Map, Placemark } from '@pbe/react-yandex-maps';
-
-export const metadata = {
-  title: 'Контакты | Двери Грузии',
-};
 
 export default function Contacts() {
   const def = {
     center: [41.699317, 44.79698],
     zoom: 14,
   };
-
   return (
     <div>
       <h1 className={s.title}>Контакты</h1>
@@ -84,7 +78,11 @@ export default function Contacts() {
               apikey: '53dca892-14fc-4fba-94d9-e871421fff5e',
               load: 'package.full',
             }}>
-            <Map defaultState={def} className={s.mapContainer}>
+            <Map
+              defaultState={def}
+              width={480}
+              height={360}
+              className={s.mapContainer}>
               <Placemark geometry={[41.696846, 44.804589]} />
               <Placemark geometry={[41.699317, 44.79698]} />
             </Map>

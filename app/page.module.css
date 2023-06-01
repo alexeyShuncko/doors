@@ -29,17 +29,21 @@
     box-shadow: 5px 5px 10px var(--border);
 }
 
-
-
 .photo2 {
     border-radius: 10px;
     box-shadow: -5px 5px 10px var(--border);
 }
 
-#secondItem {
-    display: flex;
+
+.linkCatalogs {
+    font-size: 1.1em;
+    text-decoration: underline;
+    transition: 0.1s;
 }
 
+.linkCatalogs:hover {
+    font-weight: bold;
+}
 
 @media (max-width: 768px) {
     .list li {

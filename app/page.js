@@ -1,5 +1,6 @@
 import Image from 'next/image';
 import s from './page.module.css';
+import Link from 'next/link';
 import photo1 from '../public/interier.webp';
 import photo2 from '../public/2.jpg';
 import photo3 from '../public/3.webp';
@@ -70,8 +71,11 @@ export default function Home() {
               Наша компания работает напрямую с производителями, среди которых
               есть как отечественные, так и зарубежные фабрики. На нашем сайте
               доступно более 250 моделей. Вы непременно сможете подобрать то,
-              что точно будет вам по карману! А ещё,у нас есть уникальные
-              каталоги с подробными описаниями и фотографиями.
+              что точно будет вам по карману! А ещё,у нас есть{' '}
+              <Link href={'/catalogs'} className={s.linkCatalogs}>
+                уникальные каталоги↗
+              </Link>{' '}
+              с подробными описаниями и фотографиями.
             </div>
           </div>
         </li>
