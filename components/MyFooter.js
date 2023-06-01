@@ -7,7 +7,7 @@ const MyFooter = () => {
   const pathname = usePathname();
   return (
     <footer>
-      <div className="lists">
+      <div className="listsFooter">
         <ul>
           <li>
             <Link href={'/'} className={pathname == '/' ? 'activeLink' : ''}>

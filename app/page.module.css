@@ -12,6 +12,12 @@
     margin-bottom: 30px;
 }
 
+.list {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
 .list li {
     display: flex;
     align-items: center;
@@ -35,12 +41,12 @@
 }
 
 
-@media (max-width: 737px) {
+@media (max-width: 768px) {
     .list li {
         flex-direction: column;
     }
 
-    #secondItem {
-        flex-direction: column-reverse;
+    .secondItem {
+        flex-direction: column-reverse !important;
     }
 }

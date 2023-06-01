@@ -9,7 +9,7 @@ export const metadata = {
 
 export default function Contacts() {
   const def = {
-    center: [41.693083, 44.801561],
+    center: [41.699317, 44.79698],
     zoom: 14,
   };
 
@@ -84,7 +84,7 @@ export default function Contacts() {
               apikey: '53dca892-14fc-4fba-94d9-e871421fff5e',
               load: 'package.full',
             }}>
-            <Map defaultState={def} width={480} height={360}>
+            <Map defaultState={def} className={s.mapContainer}>
               <Placemark geometry={[41.696846, 44.804589]} />
               <Placemark geometry={[41.699317, 44.79698]} />
             </Map>

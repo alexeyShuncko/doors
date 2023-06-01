@@ -5,9 +5,16 @@
 
 .contactBlock {
     display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
     align-items: center;
     justify-content: space-around;
     animation: hid 1s;
+}
+
+.mapContainer {
+    width: 480px;
+    height: 360px;
 }
 
 
@@ -28,4 +35,19 @@
 
 .firstLi {
     margin-bottom: 5px;
+}
+
+@media (max-width: 576px) {
+    .contactBlock {
+        justify-content: flex-start;
+    }
+
+    .contactBlock li:nth-child(3) {
+        margin: 0px auto;
+    }
+
+    .mapContainer {
+        width: 90vw;
+        height: calc(90vw*0.67);
+    }
 }
