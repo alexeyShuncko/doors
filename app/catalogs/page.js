@@ -15,7 +15,7 @@ export default function Catalogs() {
       <h1 className={s.title}>Каталоги</h1>
       <ul className={s.listCollections}>
         <li>
-          <a href="http://localhost:3000/catalog.pdf" download>
+          <a href="https://doors-dun.vercel.app/catalog.pdf" download>
             <div className={s.imgCont}>
               <Image
                 src={door1}
@@ -29,7 +29,7 @@ export default function Catalogs() {
           </a>
         </li>
         <li>
-          <a href="http://localhost:3000/catalog.pdf" download>
+          <a href="https://doors-dun.vercel.app/catalog.pdf" download>
             <div className={s.imgCont}>
               <Image
                 src={door2}
@@ -42,7 +42,7 @@ export default function Catalogs() {
           </a>
         </li>
         <li>
-          <a href="http://localhost:3000/catalog.pdf" download>
+          <a href="https://doors-dun.vercel.app/catalog.pdf" download>
             <div className={s.imgCont}>
               <Image
                 src={door3}
@@ -55,7 +55,7 @@ export default function Catalogs() {
           </a>
         </li>
         <li>
-          <a href="http://localhost:3000/catalog.pdf" download>
+          <a href="https://doors-dun.vercel.app/catalog.pdf" download>
             <div className={s.imgCont}>
               <Image
                 src={door4}
