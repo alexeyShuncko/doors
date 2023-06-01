@@ -11,7 +11,7 @@ export const metadata = {
 
 export default function Catalogs() {
   return (
-    <div>
+    <div className={s.containerCatalogs}>
       <h1 className={s.title}>Каталоги</h1>
       <ul className={s.listCollections}>
         <li>
