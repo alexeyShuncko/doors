@@ -44,11 +44,35 @@ header {
   z-index: 100;
 }
 
-header ul {
+
+
+.listMenu {
   display: flex;
   gap: 40px;
   align-items: center;
   justify-content: center;
+}
+
+.listMenuHidden {
+  position: absolute;
+  top: 10px;
+  right: 80px;
+  padding: 10px;
+  border-radius: 10px;
+  background: var(--border);
+  animation: menu 0.5s;
+}
+
+@keyframes menu {
+  0% {
+    opacity: 0;
+    transform: translateX(50px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
 }
 
 .activeLink {
@@ -70,6 +94,28 @@ header ul {
 
 .logo span {
   font-size: 1.2em;
+  line-height: 1em;
+}
+
+.hiddenMenuBlock {
+  display: none;
+}
+
+.hiddenMenu {
+  cursor: pointer;
+}
+
+.hiddenMenu div {
+  width: 30px;
+  height: 3px;
+  background: var(--border);
+  border-radius: 3px;
+  margin-bottom: 5px;
+  transition: 0.2s;
+}
+
+.hiddenMenu:hover div {
+  background: var(--clrActive);
 }
 
 footer {
@@ -89,7 +135,7 @@ footer {
 
 main {
   padding: 30px 0;
-  margin: 70px 80px 0;
+  margin: 40px 80px 0;
   letter-spacing: normal;
   font-size: 0.8em;
   overflow: hidden;
@@ -118,6 +164,10 @@ main {
   color: var(--clrActive);
 }
 
+.hiddenMenuBlock {
+  display: none;
+}
+
 
 
 @media (max-width: 737px) {
@@ -126,6 +176,18 @@ main {
   }
 
   main {
-    margin: 100px 10px;
+    margin: 40px 10px;
+  }
+
+  .listMenuHidden {
+    right: 10px;
+  }
+
+  header nav {
+    display: none;
+  }
+
+  .hiddenMenuBlock {
+    display: block;
   }
 }

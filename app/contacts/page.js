@@ -21,8 +21,16 @@ export default function Contacts() {
           <div className={s.item}>
             <h3>Телефоны:</h3>
             <ul>
-              <li className={s.firstLi}>+995-032-1234455</li>
-              <li>+995-032-1112233</li>
+              <li className={s.firstLi}>
+                <a href="tel:+995-032-1234455" target="_blank" rel="noreferrer">
+                  +995-032-1234455
+                </a>
+              </li>
+              <li>
+                <a href="tel:+995-032-1112233" target="_blank" rel="noreferrer">
+                  +995-032-1112233
+                </a>
+              </li>
             </ul>
           </div>
           <div>
@@ -37,17 +45,35 @@ export default function Contacts() {
           <div className={s.item}>
             <h3>Электронная почта:</h3>
             <ul>
-              <li className={s.firstLi}>dveri@mail.ru</li>
-              <li>topdverigruzii@mail.ru</li>
+              <li className={s.firstLi}>
+                <a href="mailto:dveri@mail.ru" target="_blank">
+                  dveri@mail.ru
+                </a>
+              </li>
+              <li>
+                <a href="mailto:topdverigruzii@mail.ru" target="_blank">
+                  topdverigruzii@mail.ru
+                </a>
+              </li>
             </ul>
           </div>
           <div>
             <h3>Адреса магазинов:</h3>
             <ul>
               <li className={s.firstLi}>
-                Тбилиси, проспект Шота Руставели, 16
+                <a
+                  href="https://yandex.by/maps/10277/tbilisi/house/YE0YcQ5mQE0HQFprfXp4eH9iYw==/?ll=44.796980%2C41.699317&z=16.49"
+                  target="_blank">
+                  Тбилиси, проспект Шота Руставели, 16
+                </a>
               </li>
-              <li>Тбилиси, улица Николая Бараташвили, 4</li>
+              <li>
+                <a
+                  href=" https://yandex.by/maps/10277/tbilisi/house/YE0YfgdkTE0OQFprfXp4d3RnYg==/?ll=44.804589%2C41.696847&z=16.49"
+                  target="_blank">
+                  Тбилиси, улица Николая Бараташвили, 4
+                </a>
+              </li>
             </ul>
           </div>
         </li>

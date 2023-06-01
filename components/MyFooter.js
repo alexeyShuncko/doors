@@ -45,11 +45,25 @@ const MyFooter = () => {
           <li>
             <a href="tel:+995-032-1112233" target="_blank" rel="noreferrer">
               +995-032-1112233
-            </a>{' '}
+            </a>
           </li>
-          <li>dveri@mail.ru</li>
-          <li>topdverigruzii@mail.ru</li>
-          <li>Тбилиси, проспект Шота Руставели, 16</li>
+          <li>
+            <a href="mailto:dveri@mail.ru" target="_blank">
+              dveri@mail.ru
+            </a>
+          </li>
+          <li>
+            <a href="mailto:topdverigruzii@mail.ru" target="_blank">
+              topdverigruzii@mail.ru
+            </a>
+          </li>
+          <li>
+            <a
+              href="https://yandex.by/maps/10277/tbilisi/house/YE0YcQ5mQE0HQFprfXp4eH9iYw==/?ll=44.796980%2C41.699317&z=16.49"
+              target="_blank">
+              Тбилиси, проспект Шота Руставели, 16
+            </a>
+          </li>
         </ul>
       </div>
       <div className="copy">&copy; Двери Грузии</div>
